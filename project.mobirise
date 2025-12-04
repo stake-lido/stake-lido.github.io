@@ -1,0 +1,159 @@
+{
+  "settings": {
+    "name": "lido",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#1c2229",
+        "#1c1c21"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/lido.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://stake-lido.github.io/sitemap.xml\n",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://stake-lido.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "1c7qbqzcxt",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Lido Staking | Lido Fi | Home | Official",
+        "meta_descr": "Lido Finance is a prominent liquid staking solution in the Ethereum ecosystem, known for its user-friendly approach to staking cryptocurrencies.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/stake-lido.png\" alt=\"Stake Lido\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "ugeGmx4UM5",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#f7f7f7",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#1c1c21\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#1c1c21\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Lido Finance: Unlocking the Potential of Ethereum Staking</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the rapidly evolving world of decentralized finance (DeFi), <a href=\"https://stake-lido.github.io/\" class=\"text-primary\"><b>Lido Finance</b></a> has emerged as a trailblazer, revolutionizing the way users can participate in the staking of Ethereum (ETH) and other cryptocurrencies. As a liquid staking protocol, Lido has carved out a unique niche within the DeFi ecosystem, empowering users to maximize the potential of their digital assets while maintaining the flexibility and liquidity that are essential in today's dynamic financial landscape.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Rise of Ethereum Staking:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The launch of Ethereum 2.0, also known as Eth2, has ushered in a new era for the Ethereum network. At the heart of this transition is the implementation of a Proof-of-Stake (PoS) consensus mechanism, a significant departure from the Proof-of-Work (PoW) system that has underpinned Ethereum since its inception.<br><br>In the Eth2 PoS model, users are required to \"stake\" their ETH tokens in order to participate in the validation of transactions and the maintenance of the network. This staking process not only helps to secure the network but also generates rewards for the participants, making it an attractive proposition for Ethereum holders.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Challenge of Ethereum Staking:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">While the potential rewards of Ethereum staking are undeniable, the process has historically been accompanied by a significant drawback: illiquidity. In order to participate in the staking process, users are required to lock up their ETH tokens for an extended period, effectively removing them from circulation and limiting their ability to access or trade them.<br><br>This illiquidity can be a significant barrier for many users, especially those who require the flexibility to manage their digital assets or participate in other DeFi protocols and activities. The need for a solution that could unlock the benefits of Ethereum staking while preserving liquidity became increasingly apparent.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Enter Lido Finance:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b><a href=\"https://stake.lido.fi/\" class=\"text-primary\">Lido Finance</a> </b>was founded in 2020 with the primary goal of addressing the liquidity challenge associated with Ethereum staking. The protocol's innovative approach has since positioned it as a leading player in the DeFi ecosystem, attracting a growing community of users and garnering significant attention from industry experts and investors alike.<br><br><b>Liquid Staking:</b><br>At the core of Lido Finance's offering is its liquid staking solution. When users deposit their ETH tokens into the Lido protocol, they receive a tokenized representation of their staked assets, known as stETH (Staked Ether). This stETH token is fully fungible and can be freely traded, lent, or used in other DeFi applications, effectively unlocking the liquidity of the staked ETH.<br><br><b>Decentralized Governance:</b><br>Lido Finance is designed with a strong emphasis on decentralization. The protocol's governance is managed by the Lido DAO, a decentralized autonomous organization composed of stETH token holders. Through the Lido DAO, users can participate in decision-making processes, vote on proposals, and shape the future direction of the platform.<br><br><b>Staking Rewards:</b><br>By staking their ETH through the Lido protocol, users can earn staking rewards, which are automatically accrued and reflected in the value of their stETH tokens. These rewards are generated from the Ethereum network's PoS validation process, with Lido taking a small commission for operating the protocol.<br><br><b>Diversified Staking Providers:</b><br>Lido Finance has established partnerships with a diverse array of Ethereum staking providers, including major node operators and decentralized infrastructure providers. This diversification helps to mitigate the risks associated with relying on a single staking provider and enhances the overall security and reliability of the protocol.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Lido Finance Ecosystem:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Lido Finance's innovative approach to liquid staking has catalyzed the development of a robust and interconnected ecosystem, offering users a wide range of features and functionalities.<br><br><b>Cross-Chain Compatibility:</b><br>While Lido Finance was initially focused on Ethereum staking, the protocol has since expanded its capabilities to support other blockchain networks, such as Solana and Polkadot. This cross-chain compatibility allows users to stake a variety of digital assets and further diversify their portfolios.<br><br><b>DeFi Integrations:</b><br>Lido Finance has seamlessly integrated with a growing number of decentralized applications and protocols, enabling users to leverage their stETH tokens across the broader DeFi landscape. This integration unlocks new opportunities for yield farming, lending, borrowing, and more, further enhancing the utility and versatility of the Lido ecosystem.<br><br><b>Staking Derivatives</b><br>The Lido protocol has pioneered the creation of staking derivatives, such as stETH, which serve as representations of the underlying staked assets. These derivatives can be used in a wide range of DeFi applications, expanding the use cases for Lido's liquid staking solution.<br><br><b>Wallet Compatibility:</b><br>Lido Finance supports a diverse range of cryptocurrency wallets, including popular options like MetaMask, Ledger, and Trezor. This broad wallet compatibility ensures that users can easily connect their preferred wallets to the Lido platform, providing a familiar and secure user experience.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Impact of Lido Finance:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Since its inception, Lido Finance has had a significant impact on the DeFi ecosystem, establishing itself as a leading protocol in the liquid staking space.<br><br><b>Liquidity Expansion:</b><br>By offering a liquid staking solution, Lido Finance has helped to unlock the vast pool of ETH that was previously locked up in the staking process. This increased liquidity has not only benefited Lido users but has also had a positive ripple effect on the broader DeFi landscape, improving overall market efficiency and facilitating greater participation in a wide range of decentralized applications.<br><br><b>Driving Ethereum Adoption:</b><br>Lido Finance's innovative approach to Ethereum staking has played a crucial role in driving broader adoption of the Ethereum network. By making staking more accessible and flexible, the protocol has lowered the barriers to entry for users who may have been hesitant to participate in the staking process due to liquidity concerns.<br><br><b>Enhancing Decentralization:</b><br>Lido Finance's commitment to decentralization, as evidenced by its decentralized governance model and diversified staking provider network, has contributed to the overall decentralization of the DeFi ecosystem. The protocol's emphasis on community-driven decision-making and the distribution of control aligns with the core principles of the decentralized finance movement.<br><br><b>Fostering Innovation:</b><br>Lido Finance's innovative liquid staking solution has inspired other DeFi protocols to explore similar approaches, driving the entire ecosystem forward. The protocol's pioneering work in creating staking derivatives and cross-chain capabilities has opened up new avenues for innovation and experimentation within the decentralized finance space.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">While Lido Finance has enjoyed significant success, the protocol is not without its challenges and considerations.<br><br><b>Regulatory Uncertainty:</b><br>The rapidly evolving regulatory landscape surrounding cryptocurrencies and DeFi protocols can present potential risks and uncertainties for Lido Finance. The protocol's compliance with relevant laws and regulations will be crucial as the industry continues to mature.<br><br><b>Technological Risks:</b><br>As with any decentralized protocol, Lido Finance is subject to potential technological risks, such as smart contract vulnerabilities, network disruptions, and the evolving security threats that are inherent in the blockchain ecosystem. Maintaining a strong focus on security and resilience will be essential for the protocol's long-term viability.<br><br><b>Competitive Landscape:</b><br>The liquid staking market is becoming increasingly crowded, with a growing number of protocols vying for market share. Lido Finance will need to continue innovating and differentiating itself to maintain its position as a leading player in the space.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Lido Finance has emerged as a trailblazer in the world of decentralized finance, offering a groundbreaking solution to the liquidity challenges associated with Ethereum staking. By providing users with a liquid staking experience, the protocol has unlocked new opportunities for participation in the Ethereum ecosystem and contributed to the overall growth and decentralization of the DeFi landscape.<br><br>As the crypto industry continues to evolve, Lido Finance's commitment to innovation, decentralization, and user empowerment will undoubtedly play a crucial role in shaping the future of Ethereum staking and the broader DeFi ecosystem. With its robust ecosystem, diversified partnerships, and community-driven governance, Lido Finance is well-positioned to remain at the forefront of this transformative financial revolution.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "ugeGmUexaR",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
